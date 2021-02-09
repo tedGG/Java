@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Create new plan</title>
+</head>
+<body>
+<div class="container">
+    <form action="#" th:action="@{/floor_plan_create}" th:object="${floor_coordinates}" method="post">
+        </br>
+        <label for="name">Name:</label>
+        <input class="form-control"  type="text" th:field="*{name}" id="name" placeholder="name">
+        <div style="color:red" th:if="${#fields.hasErrors('name')}" th:errors="*{name}">Name Error</div>
+        </br>
+        <label for="a1">A1:</label>
+        <input class="form-control"  type="text" th:field="*{a1}" id="a1" placeholder="a1">
+        <div style="color:red" th:if="${#fields.hasErrors('a1')}" th:errors="*{a1}">Name Error</div>
+
+        </br>
+        <label for="a2">A2:</label>
+        <input class="form-control"  type="text" th:field="*{a2}" id="a2" placeholder="a2">
+        <div style="color:red" th:if="${#fields.hasErrors('a2')}" th:errors="*{a2}">Name Error</div>
+
+        </br>
+        <label for="a3">A3</label>
+        <input class="form-control"  type="text" th:field="*{a3}" id="a3" placeholder="a3">
+        <div style="color:red" th:if="${#fields.hasErrors('a3')}" th:errors="*{a3}">Name Error</div>
+
+        </br>
+        <label for="a4">A4</label>
+        <input class="form-control"  type="text" th:field="*{a4}" id="a4" placeholder="a4">
+        <div style="color:red" th:if="${#fields.hasErrors('a4')}" th:errors="*{a4}">Name Error</div>
+
+        </br>
+        <label for="b1">B1</label>
+        <input class="form-control"  type="text" th:field="*{b1}" id="b1" placeholder="b1">
+        <div style="color:red" th:if="${#fields.hasErrors('b1')}" th:errors="*{b1}">Name Error</div>
+
+        </br>
+        <label for="b2">B2</label>
+        <input class="form-control"  type="text" th:field="*{b2}" id="b2" placeholder="b2">
+        <div style="color:red" th:if="${#fields.hasErrors('b2')}" th:errors="*{b2}">Name Error</div>
+
+        </br>
+        <label for="b3">B3</label>
+        <input class="form-control"  type="text" th:field="*{b3}" id="b3" placeholder="b3">
+        <div style="color:red" th:if="${#fields.hasErrors('b3')}" th:errors="*{b3}">Name Error</div>
+        </br>
+        <label for="b4">B4</label>
+        <input class="form-control"  type="text" th:field="*{b4}" id="b4" placeholder="b4">
+        <div style="color:red" th:if="${#fields.hasErrors('b4')}" th:errors="*{b4}">Name Error</div>
+        <br/>
+        <input type="submit" value="Create plan" class="btn btn-primary">
+    </form>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</div>
+</body>
+</html>
